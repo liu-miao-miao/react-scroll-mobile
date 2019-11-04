@@ -1,6 +1,6 @@
 const path = require('path');
 const nodeExternals = require('webpack-node-externals');
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+// const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
 module.exports = {
   entry: './src/index.js',
@@ -37,11 +37,11 @@ module.exports = {
     ]
   },
 	plugins:[
-		new UglifyJsPlugin({
-			compress: {
-				warnings: false
-			}
-		})
+// 		new UglifyJsPlugin({
+// 			compress: {
+// 				warnings: false
+// 			}
+// 		})
   ],
   externals: [nodeExternals()]
 };
